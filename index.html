@@ -62,5 +62,25 @@
     </style>
 </head>
 
+<body>
+    <p class="product-name"><b>Razer BlackShark V2 X Gaming Headset: 7.1 Surround Sound - 50mm Drivers - Memory Foam
+            Cushion - For PC, PS4, PS5, Switch - 3.5mm Audio Jack - Black</b></p>
+    <img src="1.jpg" id="main-product-image" />
+
+    <div class="product-images-container">
+        <img src="1.jpg" class="product-image" onclick="changeImage('1.jpg')" />
+        <img src="2.jpg" class="product-image" onclick="changeImage('2.jpg')" />
+        <img src="3.jpg" class="product-image" onclick="changeImage('3.jpg')" />
+        <img src="4.jpg" class="product-image" onclick="changeImage('4.jpg')" />
+        <img src="5.jpg" class="product-image" onclick="changeImage('5.jpg')" />
+    </div>
+
+    <script>
+        function changeImage(imageName) {
+            const mainImage = document.getElementById('main-product-image');
+            mainImage.src = imageName;
+        }
+    </script>
+</body>
 
 </html>
